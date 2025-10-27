@@ -16,3 +16,4 @@ jobs:
     - run: docker build . -t kousikit45mondal/next-js-app
     - run: echo "${{secrets.DOCKERHUB_PASSWORD}}" | docker login -u ${{secrets.DOCKERHUB_USERNAME}} --password-stdin 
     - run: docker push kousikit45mondal/next-js-app:latest
+    #latest
